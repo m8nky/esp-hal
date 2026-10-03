@@ -224,6 +224,7 @@ controller = { Riscv = { flavour = "clic", interrupts = 32, priority_levels = 8 
 support_status = "partial"
 instances = [{ name = "timg0" }, { name = "timg1" }]
 timg_has_divcnt_rst = true
+wdt_has_conf_update = true
 
 [device.gpio]
 support_status = "partial"

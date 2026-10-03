@@ -382,6 +382,9 @@ macro_rules! property {
     ("timergroup.timg_has_divcnt_rst") => {
         true
     };
+    ("timergroup.wdt_has_conf_update") => {
+        true
+    };
     ("uart.ram_size") => {
         128
     };

@@ -904,6 +904,7 @@ impl Chip {
                     "spi_master_has_dma_segmented_transfer",
                     "spi_slave_supports_dma",
                     "timergroup_timg_has_divcnt_rst",
+                    "timergroup_wdt_has_conf_update",
                     "timergroup_rc_fast_calibration_is_set",
                     "uart_ram_size=\"128\"",
                     "uart_has_sclk_divider",
@@ -1063,6 +1064,7 @@ impl Chip {
                     "cargo:rustc-cfg=spi_master_has_dma_segmented_transfer",
                     "cargo:rustc-cfg=spi_slave_supports_dma",
                     "cargo:rustc-cfg=timergroup_timg_has_divcnt_rst",
+                    "cargo:rustc-cfg=timergroup_wdt_has_conf_update",
                     "cargo:rustc-cfg=timergroup_rc_fast_calibration_is_set",
                     "cargo:rustc-cfg=uart_ram_size=\"128\"",
                     "cargo:rustc-cfg=uart_has_sclk_divider",
@@ -1372,6 +1374,7 @@ impl Chip {
                     "spi_master_has_dma_segmented_transfer",
                     "spi_slave_supports_dma",
                     "timergroup_timg_has_divcnt_rst",
+                    "timergroup_wdt_has_conf_update",
                     "timergroup_rc_fast_calibration_is_set",
                     "uart_ram_size=\"128\"",
                     "uart_has_sclk_divider",
@@ -1576,6 +1579,7 @@ impl Chip {
                     "cargo:rustc-cfg=spi_master_has_dma_segmented_transfer",
                     "cargo:rustc-cfg=spi_slave_supports_dma",
                     "cargo:rustc-cfg=timergroup_timg_has_divcnt_rst",
+                    "cargo:rustc-cfg=timergroup_wdt_has_conf_update",
                     "cargo:rustc-cfg=timergroup_rc_fast_calibration_is_set",
                     "cargo:rustc-cfg=uart_ram_size=\"128\"",
                     "cargo:rustc-cfg=uart_has_sclk_divider",
@@ -1932,6 +1936,7 @@ impl Chip {
                     "spi_master_has_dma_segmented_transfer",
                     "spi_master_has_clk_pre_div",
                     "timergroup_timg_has_divcnt_rst",
+                    "timergroup_wdt_has_conf_update",
                     "timergroup_rc_fast_calibration_is_set",
                     "uart_ram_size=\"128\"",
                     "uart_peripheral_controls_mem_clk",
@@ -2180,6 +2185,7 @@ impl Chip {
                     "cargo:rustc-cfg=spi_master_has_dma_segmented_transfer",
                     "cargo:rustc-cfg=spi_master_has_clk_pre_div",
                     "cargo:rustc-cfg=timergroup_timg_has_divcnt_rst",
+                    "cargo:rustc-cfg=timergroup_wdt_has_conf_update",
                     "cargo:rustc-cfg=timergroup_rc_fast_calibration_is_set",
                     "cargo:rustc-cfg=uart_ram_size=\"128\"",
                     "cargo:rustc-cfg=uart_peripheral_controls_mem_clk",
@@ -2561,6 +2567,7 @@ impl Chip {
                     "spi_master_has_dma_segmented_transfer",
                     "spi_slave_supports_dma",
                     "timergroup_timg_has_divcnt_rst",
+                    "timergroup_wdt_has_conf_update",
                     "timergroup_rc_fast_calibration_divider",
                     "timergroup_rc_fast_calibration_is_set",
                     "uart_ram_size=\"128\"",
@@ -2836,6 +2843,7 @@ impl Chip {
                     "cargo:rustc-cfg=spi_master_has_dma_segmented_transfer",
                     "cargo:rustc-cfg=spi_slave_supports_dma",
                     "cargo:rustc-cfg=timergroup_timg_has_divcnt_rst",
+                    "cargo:rustc-cfg=timergroup_wdt_has_conf_update",
                     "cargo:rustc-cfg=timergroup_rc_fast_calibration_divider",
                     "cargo:rustc-cfg=timergroup_rc_fast_calibration_is_set",
                     "cargo:rustc-cfg=uart_ram_size=\"128\"",
@@ -3161,6 +3169,7 @@ impl Chip {
                     "spi_master_has_dma_segmented_transfer",
                     "spi_master_has_clk_pre_div",
                     "timergroup_timg_has_divcnt_rst",
+                    "timergroup_wdt_has_conf_update",
                     "timergroup_rc_fast_calibration_is_set",
                     "uart_ram_size=\"128\"",
                     "uart_peripheral_controls_mem_clk",
@@ -3339,6 +3348,7 @@ impl Chip {
                     "cargo:rustc-cfg=spi_master_has_dma_segmented_transfer",
                     "cargo:rustc-cfg=spi_master_has_clk_pre_div",
                     "cargo:rustc-cfg=timergroup_timg_has_divcnt_rst",
+                    "cargo:rustc-cfg=timergroup_wdt_has_conf_update",
                     "cargo:rustc-cfg=timergroup_rc_fast_calibration_is_set",
                     "cargo:rustc-cfg=uart_ram_size=\"128\"",
                     "cargo:rustc-cfg=uart_peripheral_controls_mem_clk",
@@ -3721,6 +3731,7 @@ impl Chip {
                     "spi_master_has_dma_segmented_transfer",
                     "spi_slave_supports_dma",
                     "timergroup_timg_has_divcnt_rst",
+                    "timergroup_wdt_has_conf_update",
                     "timergroup_rc_fast_calibration_divider",
                     "timergroup_rc_fast_calibration_tick_enable",
                     "timergroup_rc_fast_calibration_is_set",
@@ -3960,6 +3971,7 @@ impl Chip {
                     "cargo:rustc-cfg=spi_master_has_dma_segmented_transfer",
                     "cargo:rustc-cfg=spi_slave_supports_dma",
                     "cargo:rustc-cfg=timergroup_timg_has_divcnt_rst",
+                    "cargo:rustc-cfg=timergroup_wdt_has_conf_update",
                     "cargo:rustc-cfg=timergroup_rc_fast_calibration_divider",
                     "cargo:rustc-cfg=timergroup_rc_fast_calibration_tick_enable",
                     "cargo:rustc-cfg=timergroup_rc_fast_calibration_is_set",
@@ -5683,6 +5695,7 @@ pub fn emit_check_cfg_directives() {
     println!("cargo:rustc-check-cfg=cfg(spi_master_has_app_interrupts)");
     println!("cargo:rustc-check-cfg=cfg(spi_master_has_dma_segmented_transfer)");
     println!("cargo:rustc-check-cfg=cfg(timergroup_timg_has_divcnt_rst)");
+    println!("cargo:rustc-check-cfg=cfg(timergroup_wdt_has_conf_update)");
     println!("cargo:rustc-check-cfg=cfg(uart_has_sclk_divider)");
     println!("cargo:rustc-check-cfg=cfg(esp32c3)");
     println!("cargo:rustc-check-cfg=cfg(soc_has_ds)");
